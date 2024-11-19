@@ -3,8 +3,8 @@ import React from 'react'
 import '@fortawesome/fontawesome-free/css/all.min.css'
 import '../styles/Navbar.css'
 
-const Navbar = (props) => {
-    console.log(props.size,"size");
+const Navbar = ({size}) => {
+    // console.log(props.size,"size");
     return(
        <nav>
             <div className="nav_box">
@@ -15,7 +15,7 @@ const Navbar = (props) => {
                 <span>
                     <i className="fas fa-cart-plus"></i>
                 </span>
-                <span>{props.size}</span>
+                <span>{size}</span>
 
             </div>
 
